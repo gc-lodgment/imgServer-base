@@ -1,0 +1,308 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+body {font-size:12px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', sans-serif; color:#665c5b}
+a:link, a:visited {text-decoration:none; color:#665c5b}
+a:hover, a:active {text-decoration:underline; color:#b90f3c}
+
+#overlay { position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; background-color: #464646; opacity: 0.8 }
+#loading { position: absolute; width: 200px; height: 100px; z-index: 2; display: none; background-color: #000; text-align: center; border: solid 1px #6a6430; color: #fff; font-family: tahoma; }
+#pop { position: absolute; width: 1024px; height: 543px; z-index: 2; display: none; background-color: #fff; text-align: right; font-family:"Dotum", sans-serif; color: #262626; background: url(http://img.monopalace.com/layerd_pop2.jpg) no-repeat;}
+#pop2 { position: absolute; margin:auto; width: 342px; height: 597; z-index: 999; display: none}
+#wrapper{width:100%; margin:auto;}
+#header{width:100%; height:172px; background:url(http://img.olivehill.co.kr/top_menu_bg.gif) 0 90px repeat-x}
+#top_contens{width:897px; height:137px; margin:auto;}
+#top_contens h1{float:left}
+#util_menu{float:right}
+#util_menu a{margin:0 4px 0 4px}
+#util_menu img{margin-left:10px}
+#util_menu .point {color:#dd0101; font-weight:600}
+#util_menu .point a {color:#dd0101}
+#top_contens .tel {float:right; margin-top:20px; margin-left:300px; padding:10px; width:235px; height:30px; background-color:#567310; color:#fff; font-weight:bold}
+#top_contens .tel .text {width:115px; height:30px; text-align:left; line-height:0.5}
+#top_contens .tel .number {padding-left:10px; width:140px; height:30px; text-align:left; font-size:23px; letter-spacing:-1px}
+
+#right_banner{padding-top:90px; width:127px; height:273px; text-align:center;}
+
+#right_img {float:left; width:358px; height:336px; background:url(http://img.olivehill.co.kr/intro_04_bg.jpg) no-repeat; color:#fff; text-align:center; font-size:17px; font-weight:bold}
+
+/*공통마진*/
+.m_l5 { margin-left:5px}
+.m_l10 { margin-left:10px}
+.m_l15 { margin-left:15px}
+
+/*메인메뉴*/
+/* #gnb{float:left; width:1024px; margin-top:3px;} */
+#gnb{float:left; margin-top:3px;}
+#gnb li{float:left; padding: 0 56px; margin-top:12px; background:url(http://img.olivehill.co.kr/top_menu_line.gif) no-repeat right center}
+#gnb li:first-child {padding-left: 0px;}
+#gnb li:last-child {padding-right: 0px;}
+#gnb li a.over{display:block; font-size:16px; color:#ffffff; font-weight:600}
+#gnb li a.over:hover{color:#eefec6; text-decoration:none}
+#gnb .last{margin-top:-1px; background:none; text-align:center; line-height:1.5}
+#gnb .last .also{font-size:13px}
+
+/*서브메뉴
+.sub_menu{float:left; position:absolute; top:105px; display:none}
+.sub_menu p a{float:left; display:block; font-size:13px; font-weight:600; color:#ffffff; padding:10px}
+.sub_menu p a:hover{color:#ffffff; background-color:#b08f51; text-decoration:none;}*/
+
+
+/*서브메뉴*/
+.sub_menuw{floaT:left; background-color:#f0f0f0; width:100%; height:35px}
+.sub_menuw .sub_menu{width:1024px; margin:auto;}
+.sub_menuw ul{margin-left:550px}
+.sub_menuw ul li{float:left; margin-right:25px; line-height:2.4; font-weight:600; font-size:14px; }
+.sub_menuw ul li a{float:left;line-height:2.4; font-weight:600; font-size:14px; color:#6c6c6c }
+.sub_menuw ul li.on a{text-decoration:underline; color:#b90f3c}
+
+
+
+/*페이지 고정*/
+#intro #intro .over {color:#eefec6;}
+#environment #info .over {color:#eefec6;}
+#modelhouse_info #size .over {color:#eefec6;}
+#reserve #qna .over {color:#eefec6}
+
+#container{*zoom:1; width:100%; margin:auto; margin-bottom:100px}
+#container:after{clear:both; content:""; display:block}
+
+/*좌측 컨텐츠*/
+#contentsLeft{float:left; width:192px;}
+
+/*메인 컨텐츠*/
+#contentsCenter{float:left; width:100%}
+#title{width:100%; height:90px; padding:25px 0 10px 0;}
+#title h2{text-align:center; font-weight:600; font-size:32px; color:#567310; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic'}
+#title .subtitle{text-align:center; margin-top:5px; font-size:16px}
+#title .subtitle span{color:#567310}
+#bbs_title{width:950px; height:43px; margin-left:37px; background:url(http://img.olivehill.co.kr//bbs_line.gif) 0 42px no-repeat}
+#bbs_title h2{float:left; font-weight:600; font-size:32px; color:#997c47}
+#bbs_title .subtitle{float:left; margin-top:18px; margin-left:10px}
+#navi{float:right; margin-top:5px; margin-bottom:15px}
+#navi img{margin-bottom:2px;}
+#main_contents{margin:auto; width:897px; margin-top:10px}
+#main_contents h3{margin-top:60px; border-top:2px solid #dac9ab; border-bottom:1px solid #dac9ab}
+#main_contents h6{text-align:left; font-weight:600; font-size:19px; color:#567310; padding:10px; margin:25px 0 0 0; border-bottom:1px solid #b79967; border-top:1px solid #b79967}
+#main_contents ul{float:left; width:580px; margin-top:23px}
+#main_contents ul li{float:left; margin-left:26px}
+#main_contents ul li a{font-size:14px; line-height:2; color:#323232}
+#main_contents ul li a:hover{color:#987d45; text-decoration:none}
+
+
+#big_img{float:left; width:783px}
+#s_img{float:left; width:241px}
+#s_img a{display:inline-block; margin-left:5px; margin-bottom:3px}
+#interior_img{float:left; width:387px; margin-top:18px}
+#interior_text{float:left; width:620px; height:192px; margin-left:17px; margin-top:25px; background-color:#f4f7fe}
+#interior_text p{text-align:left; font-size:16px; line-height:1.7; margin-top:65px; margin-left:38px}
+
+/*임대예약*/
+#board_reserve{float:left; width:897px; margin-top:15px; border-top:2px solid #567310}
+#board_reserve th{height:36px; text-align:right; padding-right:17px; border-right:1px solid #a8abb4; border-bottom:1px solid #a8abb4; background-color:#f6f6f6; font-weight:600}
+#board_reserve td{height:36px; padding-left:17px; border-bottom:1px solid #a8abb4;}
+#board_reserve td .name{width:160px; height:19px; border:1px solid #c5c5c5}
+#board_reserve td select{padding:1px; border:1px solid #c5c5c5}
+#board_reserve td .mobile{width:64px; height:19px; border:1px solid #c5c5c5}
+#board_reserve td .email{width:119px; height:19px; border:1px solid #c5c5c5}
+#board_reserve .apt_width p{margin:8px 0 8px 0; line-height:2.4}
+#board_reserve .personal_info{height:284px}
+#board_reserve .personal_info .y_n{margin:10px 0 20px 0}
+#board_reserve .personal_info .text{margin-top:10px; font-size:12px; line-height:1.4}
+#board_reserve .personal_info ul{margin:20px 0 0 20px}
+#board_reserve .personal_info ul li{margin-bottom:18px; line-height:1.4}
+#board_reserve td p span{font-weight:600; width:78px; display:inline-block}
+#board_reserve td label{margin-right:15px}
+#board_reserve td #apt{border:0; margin:0; padding:0}
+#board_reserve td #sanga{border:0; margin:0 0 0 27px; padding:0}
+#board_reserve .reserve_button{text-align:right; padding-right:360px; border-bottom:0px}
+#board_reserve .cancel{width:112px; height:39px; border:0; margin-top:20px; background:url(http://img.olivehill.co.kr/btn_cancel.gif) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+#board_reserve .regist{width:112px; height:39px; border:0; margin-top:20px; background:url(http://img.olivehill.co.kr/btn_regist.gif) 0 0 no-repeat; text-indent:-99999px; cursor:pointer}
+.border_0{border:none; margin:0; padding:0}
+#board_reserve .reserve_email{text-align:left; padding-right:360px; border-bottom:0px}
+#board_reserve .bold {font-size:14px; color:#a8abb4; font-weight:600}
+
+/*footer*/
+#footer{clear:both; width:100%; height:150px; background-color:#484848}
+#f_contents{width:897px; margin:auto; color:#a8a9ab} 
+#f_contents h2{float:left; width:160px; margin-top:16px; text-align:left; color:#a8a9ab}
+#f_contents .tel{font-size:15px; color:#c70027; line-height:2; font-weight:600; color:#ffffff}
+#f_contents .address{float:left; font-size:11px; margin-top:10px; line-height:1.2; color:#a8a9ab}
+#f_contents p img{margin-top:15px}
+#f_contents p .footer_mono{color:#fff}
+#f_contents p .mail{color:#a8a9ab}
+#f_contents h3{float:right; text-align:center; margin-top:18px; margin-top:35px}
+
+#main_contents2 .tour {width: 1024px; height: 268px; background-color: #f5f5f5; margin-bottom: 20px}
+#main_contents2 .tour dt {float: left; width: 280px; text-align: right; margin-top: 30px}
+#main_contents2 .tour dd {float: right; width: 700px; text-align: left; margin-top: 50px}
+#main_contents2 .tour dd h3 {color: #9a7c48; font-weight: normal}
+#main_contents2 .tour dd span.tit {color: #9a7c48; font-weight: 600; font-size: 20px}
+#main_contents2 .tour dd p {text-align: justify; line-height: 1.5; font-weight: normal; width: 660px; margin-top: 15px}
+#main_contents2 .tour dd p.tour_link {font-weight: 600}
+#main_contents2 .tour dd span.tel {color: #e71616}
+#main_contents2 .tour dd span.top_btn {float:right; display:block; margin-right:20px}
+#main_contents2 .tour .distance { font-weight:600}
+#tourist_menu {width:1000px; line-height:2; padding:20px 20px}
+#tourist_menu a {margin-right:10px; margin-left:10px}
+
+
+/*메인 컨텐츠(건축개요)*/
+#architecture_table {width:897px; margin-top:10px; border-top:2px solid #567310}
+#architecture_table h5 {color: #9a7c48; font-weight: 600; font-size: 23px; margin-bottom:10px}
+#architecture_table th{text-align:center; height:38px; font-weight:600; background-color:#f6f6f6; border:1px solid #d8d8d8;}
+#architecture_table td{text-align:center; height:38px; border:1px solid #d8d8d8;}
+
+#architecture_table td .architecture_apt{border:0; width:100%; text-align:center}
+#architecture_table td .architecture_apt th{border:0; border-bottom:1px solid #ffffff; background-color:#dbdac6}
+#architecture_table td .architecture_apt td{border:0; border-left:1px solid #ffffff; font-weight:600}
+#architecture_table td .architecture_apt .standard_A{background-color:#ffa60a; color:#ffffff}
+#architecture_table td .architecture_apt .standard_B{background-color:#79cfe9; color:#ffffff}
+#architecture_table td .architecture_apt .sweet{background-color:#f0a8b7; color:#ffffff}
+#architecture_table td .architecture_apt .deluxe_A{background-color:#93c28b; color:#ffffff}
+#architecture_table td .architecture_apt .deluxe_B{background-color:#df6581; color:#ffffff}
+#architecture_table td .architecture_apt .total{background-color:#43768a; color:#ffffff}
+#architecture_table .p_l40{padding-left:40px}
+#architecture_table .bold {font-weight:600}
+
+#architecture_table_price {width:897px; margin-top:10px; margin-bottom:60px; border-top:2px solid #567310}
+#architecture_table_price th{text-align:center; height:38px; font-weight:600; background-color:#f6f6f6; border:1px solid #d8d8d8;}
+#architecture_table_price td{text-align:center; height:38px; border:1px solid #d8d8d8;}
+
+#architecture_table_price2 {width:723px; border:1px #ffffff solid}
+#architecture_table_price2 th{text-align:center; height:28px; font-weight:600; background-color:#f6f6f6;}
+#architecture_table_price2 td{text-align:center; height:28px}
+.important{background-color:#ffffbd; color:#f71902; font-weight:bold}
+
+/*임대정보*/
+#info_contents {clear:both; float:left; width:1024px}
+#info_contents .info_t {clear:both; float:left; text-align:center; width:1024px; border-collapse:collapse; border-spacing:0}
+#info_contents .info_t th {border-left:#fff 1px solid; border-top:#d6d6d6 1px solid; font-weight:600; color:#ffffff; padding:6px; text-align:center; background-color:#b08f51}
+#info_contents .info_t td {border-left:#d6d6d6 1px solid; border-bottom:#d6d6d6 1px solid; border-right:#d6d6d6 1px solid; color:#2c2c2c; text-align:center; padding:2px; line-height:1.5}
+#info_contents .info_t .bottom_line{border-bottom:#b08f51 4px solid}
+#info_contents .info_t .bottom_line_b{border-bottom:#3a99fa 4px solid}
+#info_contents .info_t .bottom_line_a{border-bottom:#ff6c00 4px solid}
+#info_contents .info_t .bottom_line_s{border-bottom:#c93252 4px solid}
+#info_contents .info_t .bottom_line_d{border-bottom:#348226 4px solid}
+#info_contents .info_t .bottom_line3{border-bottom:#b08f51 2px solid}
+#info_contents .info_t td span {font-weight:600}
+#info_contents .info_t .color{background-color:#fbf9f6}
+#info_contents .info_t .floor_3 {background-color:#ff5a00; font-weight:600}
+#info_contents .info_t .floor_5 {background-color:#d80d0d; font-weight:600}
+#info_contents p.tworoom {font-weight:600; color:#cc0e0e; margin-top:5px; line-height:1.2; font-size:14px}
+#info_contents p.price {margin-top:5px; font-weight:600}
+#info_contents p.tit {font-weight:600; font-size:16px; margin-bottom:10px}
+#info_contents .info_t .color2{background-color:#fbf9f6; font-weight:600}
+#info_contents .info_t .bottom_line2{background-color:#fbf9f6; border-bottom:#b08f51 4px solid; font-weight:600}
+#info_pop2 {clear:both; float:left; width:1024px}
+#info_pop2 .title{text-align:center; clear:both; float:left; width:1024px; margin-bottom:20px}
+#info_pop2 h3 {color: #5c5c5c; font-weight: 600; font-size: 18px; margin:20px 0; text-align:center}
+#info_pop2 .red {font-weight:600; color:#cc0e0e}
+
+
+#info_pop h3 {color: #5c5c5c; font-weight: 600; font-size: 18px; margin:20px 0; text-align:center}
+#info_pop h4 {color: #5c5c5c; font-weight: 600; font-size: 15px; text-align:left}
+#info_pop .red {font-weight:600; color:#cc0e0e}
+
+#info_pop {clear:both; float:left; width:810px}
+#info_pop h4 {font-size:14px; color:#ee0f0f; font-weight:600; padding:5px}
+#info_pop h5 {font-weight:600; padding:5px; margin-top:50px}
+#info_pop .info_pop_t {float:left; text-align:center; width:810px; border:#d6d6d6 1px solid; border-collapse:collapse; border-spacing:0; margin-bottom:20px}
+#info_pop .info_pop_t .head {font-weight:600; color:#fff; background-color:#5c5c5c; width:120px; height:40px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .head2 {font-weight:600; color:#fff; background-color:#5c5c5c; width:155px; height:40px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .head2_red {border-top:solid 2px #ee0f0f; border-left:solid 2px #ee0f0f; border-right:solid 2px #ee0f0f; font-weight:600; color:#fff; background-color:#5c5c5c; width:155px; height:40px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .blue {font-weight:600; background-color:#dff1fd; width:155px; height:25px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .orange {border-left:solid 2px #ee0f0f; border-right:solid 2px #ee0f0f; font-weight:600; background-color:#fde6df; width:155px; height:25px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .orange2 {border-bottom:solid 2px #ee0f0f; border-left:solid 2px #ee0f0f; border-right:solid 2px #ee0f0f; font-weight:600; background-color:#fde6df; width:155px; height:25px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t td {border-right:#d6d6d6 1px solid; border-left:#d6d6d6 1px solid; border-bottom:#d6d6d6 1px solid; border-right:#d6d6d6 1px solid; color:#2c2c2c; text-align:center; width:120px; height:25px; text-align:center; vertical-align:middle}
+
+#info_pop .info_pop_t2 {float:left; text-align:center; margin-bottom:20px; width:810px; border:#d6d6d6 1px solid; border-collapse:collapse; border-spacing:0; font-size:11px; font-style:none}
+#info_pop .info_pop_t2 th {border:#d6d6d6 1px solid; font-weight:600; padding:6px; text-align:center; background-color:#f3f0f0}
+#info_pop .info_pop_t2 td {border-left:#d6d6d6 1px solid; border-bottom:#d6d6d6 1px solid; border-right:#d6d6d6 1px solid; text-align:center; padding:6px; line-height:1.5}
+#info_pop .info_pop_t2 .color{background-color:#fbf9f6}
+#info_pop .info_pop_t2 p {text-align:left}
+#info_pop .title{text-align:center; clear:both; float:left; width:810px; margin-bottom:20px}
+
+/*오시는길*/
+#map_btn {text-align:center; margin-top:15px; margin-bottom:10px}
+
+
+#info_table h3 {color: #5c5c5c; font-weight: 600; font-size: 18px; margin:10px 0; text-align:center}
+#info_table {width:700px; margin-left:150px}
+#info_table table th{text-align:center; font-weight:600; background-color:#f6f6f6; border:1px solid #d8d8d8;}
+#info_table table td{height:30px; border:1px solid #d8d8d8;}
+#info_table .p_l40{padding-left:10px}
+#info_table .p_l50{padding-left:10px; padding-top:10px; padding-bottom:10px; line-height:1.5}
+
+
+
+#imgwrap{clear:both; margin-left:150px}
+
+
+/* 전세자금대출안내 팝업 */
+#info_pop {float:left; width:810px}
+#info_pop .title {float:left; text-align:center; width:810px; margin-bottom:10px}
+#info_pop .notice {float:left; width:810px; margin-top:5px}
+#info_pop .notice2 {float:left; margin-top:5px; padding-bottom:20px; padding-left:10px; width:800px; line-height:1.5}
+
+#info_pop .red {float:left; margin-top:10px; width:810px; font-weight:600; color:#cc0e0e}
+#info_pop h5 {float:left; padding:5px; margin-top:30px; width:800px; font-weight:600}
+#info_pop h4 {float:left; padding:5px; margin-top:30px; width:800px; font-weight:600; color:#ee0f0f; font-size:14px}
+
+#info_pop .info_pop_t2 {float:left; width:810px; text-align:center; border:#d6d6d6 1px solid; font-size:11px; font-style:none}
+#info_pop .info_pop_t2 th {border:#d6d6d6 1px solid; font-weight:600; padding:6px; text-align:center; background-color:#f3f0f0}
+#info_pop .info_pop_t2 td {border-left:#d6d6d6 1px solid; border-bottom:#d6d6d6 1px solid; border-right:#d6d6d6 1px solid; text-align:center; padding:6px; line-height:1.5}
+#info_pop .info_pop_t2 .color{background-color:#fbf9f6}
+#info_pop .info_pop_t2 p {text-align:left}
+
+#info_pop .info_pop_t {float:left; width:810px; text-align:center; border:#d6d6d6 1px solid}
+#info_pop .info_pop_t .head {font-weight:600; color:#fff; background-color:#5c5c5c; height:40px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .head2 {font-weight:600; color:#fff; background-color:#5c5c5c; height:40px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .head2_red {border-top:solid 2px #ee0f0f; border-left:solid 2px #ee0f0f; border-right:solid 2px #ee0f0f; font-weight:600; color:#fff; background-color:#5c5c5c; width:155px; height:40px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .blue {font-weight:600; background-color:#dff1fd; height:25px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .orange {border-left:solid 2px #ee0f0f; border-right:solid 2px #ee0f0f; font-weight:600; background-color:#fde6df; height:25px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t .orange2 {border-bottom:solid 2px #ee0f0f; border-left:solid 2px #ee0f0f; border-right:solid 2px #ee0f0f; font-weight:600; background-color:#fde6df; height:25px; text-align:center; vertical-align:middle}
+#info_pop .info_pop_t td {border-right:#d6d6d6 1px solid; border-left:#d6d6d6 1px solid; border-bottom:#d6d6d6 1px solid; border-right:#d6d6d6 1px solid; color:#2c2c2c; text-align:center; height:25px; text-align:center; vertical-align:middle}
+
+#info_pop h3 {color: #5c5c5c; font-weight: 600; font-size: 18px; margin:20px 0; text-align:center}
+#info_pop h6 {color: #5c5c5c; font-weight: 600; font-size: 15px; text-align:left; margin-top:40px}
+
+/*단기임차*/
+#wrapper #container #contentsCenter .shortPrice_box {float:left; width:857px; margin-bottom:20px; padding:15px; border:5px solid #d2d2d2; line-height:1.4}
+#wrapper #container #contentsCenter .shortPrice_box .point {color:#dd0101; font-weight:600}
+#wrapper #container #contentsCenter .btn_boro {width:897px; height:46px; margin-top:60px}
+#wrapper #container #contentsCenter .summary {color:#363636; font-size:22px; font-weight:800; letter-spacing:-1px; line-height:3}
+#wrapper #container #contentsCenter .number {color:#dd0101; font-size:24px; font-weight:800; line-height:3}
+#wrapper #container #contentsCenter .summary2 {color:#363636; font-size:22px; font-weight:800; letter-spacing:-1px; line-height:2}
+#wrapper #container #contentsCenter .summary2 span {color:#dd0101; font-size:24px; font-weight:800; line-height:2}
+
+/*평형소개-사진*/
+#main_contents .roomPhoto {float:left; width:897px}
+
+#main_contents .roomPhoto .tab {float:left; width:897px; margin-bottom:5px; border-bottom:3px solid #567310; font-size:14px; letter-spacing:-0.3px}
+#main_contents .roomPhoto .tab > dl {float:left; width:897px}
+#main_contents .roomPhoto .tab > dt {float:left; width:80px; line-height:37px; border-left:2px solid #fff; text-align:center; background:#e8e8e8; color:#555555}
+#main_contents .roomPhoto .tab > dt > a {display:block; width:80px; height:37px; color:#555555}
+#main_contents .roomPhoto .tab > dt > a:hover {display:block; width:80px; height:37px; text-decoration:none; background:#e7f0d7}
+#main_contents .roomPhoto .tab .on {width:75px; line-height:37px; border-left:2px solid #567310; background:#567310; color:#fff}
+#main_contents .roomPhoto .tab .on a {color:#fff}
+#main_contents .roomPhoto .tab .on a:hover {display:block; width:75px; height:37px; border-left:2px solid #567310; text-decoration:none; background:#567310}
+#main_contents .roomPhoto .tab .etc {width:80px; line-height:37px; border-left:2px solid #fff; background:#d5f2ea; color:#555555}
+#main_contents .roomPhoto .tab .etc a {color:#555555}
+#main_contents .roomPhoto .tab .etc a:hover {display:block; width:80px; height:37px; text-decoration:none; background:#e7f0d7}
+
+#main_contents .roomPhoto .big_img {position:relative; float:left; width:690px; height:402px}
+#main_contents .roomPhoto .big_img .mark {position:absolute; bottom:10px; right:10px}
+#main_contents .roomPhoto .big_img .mark img {width:300px; height:57px}
+#main_contents .roomPhoto .s_img {float:right; width:206px}
+#main_contents .roomPhoto .s_img > dl {float:right; width:206px}
+#main_contents .roomPhoto .s_img > dt {float:left; width:100px; height:68px; margin-left:3px}
+#main_contents .roomPhoto .s_img .btn {display:block; width:201px; height:52px; padding-top:9px; line-height:1.2; font-size:15px; letter-spacing:-1px; font-weight:600; background:#555; color:#fff; text-align:center}
+#main_contents .roomPhoto .s_img .btn a {display:block; width:201px; height:61px; color:#fff}
+#main_contents .roomPhoto .s_img .btn a:hover {text-decoration:none; color:#e7f0d7}
+#main_contents .roomPhoto .s_img .btn span {font-size:19px; font-weight:800}
+
+#main_contents .roomPhoto .zoom {float:left; width:897px; height:39px; margin-top:5px; font-size:15px; letter-spacing:-0.8px}
+#main_contents .roomPhoto .zoom span {font-size:30px; height:39px; color:#99b260; font-weight:800; font-style:italic}
+
+
+
