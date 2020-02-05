@@ -4,6 +4,46 @@ body {font-size:12px; font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', s
 a:link, a:visited {text-decoration:none; color:#665c5b}
 a:hover, a:active {text-decoration:none; color:#b90f3c}
 
+img {
+  border: 0
+}
+
+input,
+textarea,
+select,
+option {
+  font-family: "나눔고딕", Nanum Gothic, sans-serif;
+  font-size: 13px;
+  color: #333
+}
+
+.select_s {
+  font-family: "나눔고딕", Nanum Gothic, sans-serif;
+  font-size: 13px;
+  color: #333;
+  border: 1px solid #dddddd;
+  padding: 5px 5px 5px 5px
+}
+
+input {
+  height: 28px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #999
+}
+
+textarea {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #999
+}
+
+select {
+  height: 28px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #999
+}
 
 #wrapper{width:100%; margin:auto;}
 .sub_img {position:relative; background:url(http://img.monofitness.co.kr/top_img.jpg) center; height:140px; background-size:cover;}
@@ -67,14 +107,55 @@ a:hover, a:active {text-decoration:none; color:#b90f3c}
 .Table_admin tr td{padding:10px 0 10px 0; border-right:1px solid #E6E6E6;}
 .line{float:left; margin-top:50px}
 
+.Table_notice02 {
+  margin-top: 50px;
+}
+
 /*게시판 리스트*/
-.Table_notice{width:100%; border-top:3px solid #e83735; float:left; margin-bottom:10px; text-align:center;}
-.Table_notice tr{border-top:1px solid #E6E6E6; border-bottom:1px solid #E6E6E6; font-size:12px;}
-.Table_notice tr th{padding:10px 0 10px 0; background-color:#f7f7f7; font-weight:bold; text-align:center}
-.Table_notice tr td{padding:10px 0 10px 0; text-align:center;}
-.Table_notice tr td.as{padding:10px 0 10px 20px; text-align:left;}
-.Table_notice tr td .tel{color:#e83735; font-weight:800; margin-left:10px; font-size:14px}
-.Table_notice tr td a{}
+.Table_notice {
+  width: 770px;
+  border-top: 3px solid #d5181f;
+  float: left;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Table_notice tr {
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  font-size: 13px;
+}
+
+.Table_notice tr th {
+  height: 40px;
+  background-color: #f7f7f7;
+  font-weight: bold;
+  text-align: center
+}
+
+.Table_notice tr td {
+  height: 40px;
+  text-align: center;
+}
+
+.Table_notice #bbs_write tr td {
+  padding: 6px 0 6px 15px;
+  text-align: left;
+}
+
+.Table_notice tr td.as {
+  padding: 10px 0 10px 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.Table_notice tr td .tel {
+  color: #bb1519;
+  font-weight: 800;
+  margin-left: 10px;
+  font-size: 14px
+}
+
 .Table_notice tr td a:hover{color:#000; text-decoration:none}
 .page_numF{margin-top:30px; float:left}
 .page_num{border-bottom:0;  text-align:center;  font-size:12px}
@@ -94,10 +175,140 @@ a:hover, a:active {text-decoration:none; color:#b90f3c}
 .Table_noticeV tr td.as{padding:10px 0 10px 20px; text-align:left;}
 .Table_noticeV tr td .tel{color:#e83735; font-weight:800; margin-left:10px; font-size:14px}
 
-.listN{margin-top:40px}
-.listN .bt{float:right}
-.prevPage{margin-bottom:10px; color:#909090}
-.nextPage{color:#909090; font-weight:bold}
+.listN {margin: 10px 0;}
+.listN:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#listN {
+  width: 100%;
+  margin: 40px 0 60px 0;
+}
+
+.listN .bt {
+  float: right
+}
+
+.prevPage {
+  margin-bottom: 10px;
+  color: #909090
+}
+
+.nextPage {
+  color: #909090;
+  font-weight: bold
+}
+
+#listN .btn_list {
+  position: absolute;
+  width: 70px;
+  bottom: 70;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  font-size: 12px
+}
+
+#listN .btn_list a {
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  color: #333;
+  font-size: 12px
+}
+.btn_delete {
+  width: 70px;
+  bottom: 40;
+  height: 30px;
+  margin-left: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  font-size: 12px;
+  float: right
+}
+
+.btn_delete a {
+  width: 70px;
+  right: 0;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  color: #333;
+  font-size: 12px;
+  display: block
+}
+
+.btn_modify {
+  width: 70px;
+  bottom: 40;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  font-size: 12px;
+  float: right
+}
+
+.btn_modify a {
+  width: 70px;
+  right: 0;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  color: #333;
+  font-size: 12px;
+  display: block
+}
+
+.btn_list2 {
+  width: 70px;
+  right: 0;
+  bottom: 40;
+  margin-left: 15px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  font-size: 12px;
+  float: right
+}
+
+.btn_list2 a {
+  width: 70px;
+  right: 0;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  color: #333;
+  font-size: 12px;
+  display: block
+}
+
 
 /*게시판 검색창*/
 /* #bbs_search{margin-bottom:20px; float:left;}
@@ -295,4 +506,124 @@ a:hover, a:active {text-decoration:none; color:#b90f3c}
 
 #wrapper ul.banner li {
   margin-bottom: 10px;
+}
+
+/*게시판 쓰기*/
+#btn_box {
+  width: 770px;
+  height: 40px;
+  padding-bottom: 80px;
+  top: 20px;
+  position: relative;
+}
+
+.f_gray {
+  font-size: 12px;
+  color: #999;
+  line-height: 30px;
+}
+
+#btn_box .btn_box_c {
+  position: absolute;
+  left: 290;
+  width: 180px;
+  height: 40px;
+  background: #eb1c24;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#btn_box .btn_box_c a {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  background: #eb1c24;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+  border-radius: 5px
+}
+
+#btn_box .btn_list {
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  font-size: 12px
+}
+
+#btn_box .btn_list a {
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  right: 0px;
+  color: #333;
+  font-size: 12px
+}
+
+#btn_box2 {
+  width: 770px;
+  height: 40px;
+  padding-bottom: 80px;
+  bottom: 5px;
+  position: relative;
+  text-align: center
+}
+
+#btn_box2 .btn_box_write {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 35px;
+  background: #eb1c24;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#btn_box2 .btn_box_write a {
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  background: #eb1c24;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  border-radius: 5px
+}
+
+#btn_box3 {
+  right: 0;
+  bottom: 62;
+  position: absolute;
+  text-align: center;
+}
+
+#btn_box3 .btn_box_write {
+  width: 100px;
+  height: 35px;
+  background: #eb1c24;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#btn_box3 .btn_box_write a {
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  background: #eb1c24;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  border-radius: 5px
 }
